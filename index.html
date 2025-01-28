@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style >
+    button{
+      margin-left: 15px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Library Management System</h1>
+  </header>
+ 
+  <div class="container">
+    <!-- Form to Add Books -->
+    <h2>Add a New Book</h2>
+    <div class="form-group">
+      <label for="title">Book Title</label>
+      <input type="text" id="title" placeholder="Enter book title">
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" id="author" placeholder="Enter author name">
+    </div>
+    <div class="form-group">
+      <label for="genre">Genre</label>
+      <select id="genre">
+        <option value="Fiction">Fiction</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Science">Science</option>
+        <option value="History">History</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <button id="addBookBtn" onclick="addbooks()">Add Book</button>
+
+    <!-- Book List Table -->
+    <h2>Library Collection</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="bookList">
+          
+        <!-- Rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

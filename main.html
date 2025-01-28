@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .no-results {
+      text-align: center;
+      color: gray;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Search</h1>
+
+  <!-- Search Bar -->
+  <input id="searchInput" type="text" placeholder="Search by title or author..." />
+  <button onclick="searchBooks()">Search</button>
+
+  <!-- Search Results Table -->
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Year</th>
+        <th>Genre</th>
+      </tr>
+    </thead>
+    <tbody id="resultsBody">
+      <!-- Results will appear here -->
+    </tbody>
+  </table>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
